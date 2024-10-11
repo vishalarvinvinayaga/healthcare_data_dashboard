@@ -57,7 +57,4 @@ The dataset is stored as `data/simulated_data.csv` and is generated using a Pyth
 
     python run.py
 
-
-    http://127.0.0.1:5000/
-
    ```
