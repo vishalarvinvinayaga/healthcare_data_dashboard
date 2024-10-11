@@ -35,3 +35,29 @@ The dataset is stored as `data/simulated_data.csv` and is generated using a Pyth
 
 - Python 3.x
 - `pip` (Python package installer)
+
+1. **Clone the repository**:
+
+   Clone this repository to your local machine using the following command:
+
+   ```bash
+   git clone https://github.com/vishalarvinvinayaga/healthcare_data_dashboard.git
+
+
+   cd healthcare_data_dashboard
+
+    python3 -m venv env
+    source env/bin/activate  # For macOS/Linux
+    # or
+    .\env\Scripts\activate   # For Windows
+
+
+    pip install -r requirements.txt
+
+
+    python run.py
+
+
+    http://127.0.0.1:5000/
+
+   ```
