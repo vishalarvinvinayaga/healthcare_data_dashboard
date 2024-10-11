@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare Data Security Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <h1>Healthcare Data Security Dashboard</h1>
+
+    <!-- Line Chart -->
+    <div id="line-chart"></div>
+    <script>
+      var line_chart = JSON.parse({{ charts['line_chart'] | tojson | safe }});
+      Plotly.newPlot('line-chart', line_chart.data, line_chart.layout);
+    </script>
+
+    <!-- Pie Chart -->
+    <div id="pie-chart"></div>
+    <script>
+      var pie_chart = JSON.parse({{ charts['pie_chart'] | tojson | safe }});
+      Plotly.newPlot('pie-chart', pie_chart.data, pie_chart.layout);
+    </script>
+
+    <!-- Bar Chart -->
+    <div id="bar-chart"></div>
+    <script>
+      var bar_chart = JSON.parse({{ charts['bar_chart'] | tojson | safe }});
+      Plotly.newPlot('bar-chart', bar_chart.data, bar_chart.layout);
+    </script>
+  </body>
+</html>
